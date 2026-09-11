@@ -16,7 +16,7 @@ export class PluginAttachmentCleanerClient extends Plugin {
     const manager = this.app.pluginSettingsManager as any;
     if (!manager) return;
 
-    const title = '附件清理管理';
+    const title = this.app?.i18n?.t ? this.app.i18n.t('Attachment Cleaner') : '附件清理管理';
     const icon = 'DeleteOutlined';
     const menuKey = 'attachment-cleaner';
     const pageName = `${menuKey}.index`;

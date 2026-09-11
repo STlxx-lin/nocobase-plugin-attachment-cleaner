@@ -1,0 +1,17 @@
+{
+  "Attachment Cleaner": "附件清理管理",
+  "Scan & Analysis": "扫描分析",
+  "Recycle Bin": "回收站",
+  "Clean Settings": "清理设置",
+  "Audit Logs": "审计日志",
+  "Total Attachments": "附件总数",
+  "Orphaned Files": "孤立附件",
+  "Expired Files": "过期附件",
+  "Recyclable Space": "可回收空间",
+  "Start Scan": "开始扫描",
+  "Recycle All": "一键移入回收站",
+  "Permanent Purge": "彻底删除",
+  "Restore": "还原附件",
+  "Retention Days": "保留天数",
+  "Auto Clean Enabled": "启用自动清理"
+}
