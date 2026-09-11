@@ -1,5 +1,14 @@
 # NocoBase 插件：附件智能清理与生命周期管理 (Plugin Attachment Cleaner)
 
+<p align="left">
+  <b>简体中文</b> | <a href="./README_EN.md">English</a>
+</p>
+
+[![Views](https://komarev.com/ghpvc/?username=nocobase-plugin-attachment-cleaner&color=007ec6&style=flat-square&label=Views)](https://github.com/STlxx-lin/nocobase-plugin-attachment-cleaner)
+[![Version](https://img.shields.io/badge/version-v0.0.15-blue.svg)](https://github.com/STlxx-lin/nocobase-plugin-attachment-cleaner/releases)
+[![NocoBase Version](https://img.shields.io/badge/NocoBase-2.x-brightgreen.svg)](https://www.nocobase.com)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 `@nocobase/plugin-attachment-cleaner` 是专为 NocoBase 2.x 设计的企业级附件全生命周期管理插件。通过深度遍历业务表引用关系，智能扫描孤立（未引用）附件与重复冗余文件，提供多级安全隔离回收站、智能去重合并、自动化定时物理清理与完备的操作审计日志，助力企业大幅降低对象存储与磁盘成本。
 
 ---
