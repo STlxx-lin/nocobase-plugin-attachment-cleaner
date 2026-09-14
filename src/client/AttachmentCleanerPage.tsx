@@ -33,6 +33,7 @@ import {
   Tooltip,
   Badge,
   Upload,
+  theme,
 } from 'antd';
 import {
   DeleteOutlined,
@@ -79,6 +80,7 @@ interface ScanProgressInfo {
 }
 
 export const AttachmentCleanerPage: React.FC = () => {
+  const { token } = theme.useToken();
   const api = useAPIClient();
   const [lastScannedAt, setLastScannedAt] = useState<string | null>(null);
   const [checkpoint, setCheckpoint] = useState<any>(null);
@@ -1269,7 +1271,7 @@ export const AttachmentCleanerPage: React.FC = () => {
   const SystemPreviewer = getSystemPreviewer(previewFile);
 
   return (
-    <div style={{ padding: 24, background: '#f5f5f5', minHeight: '100vh' }}>
+    <div style={{ padding: 24, background: token.colorBgLayout, minHeight: '100%' }}>
       {/* 顶部统计卡片 */}
       <Row gutter={[16, 16]} style={{ marginBottom: 16 }}>
         <Col span={6}>

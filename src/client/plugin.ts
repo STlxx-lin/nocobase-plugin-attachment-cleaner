@@ -7,7 +7,19 @@ export class PluginAttachmentCleanerClient extends Plugin {
     const manager = this.app?.pluginSettingsManager as any;
     if (!manager) return;
 
-    const title = this.app?.i18n?.t ? this.app.i18n.t('Attachment Cleaner') : '附件清理管理';
+    let title = '附件清理管理';
+    try {
+      const i18n = this.app?.i18n;
+      const res = i18n?.t ? i18n.t('Attachment Cleaner', { ns: ['@nocobase/plugin-attachment-cleaner', 'client'] }) : null;
+      if (res && res !== 'Attachment Cleaner') {
+        title = res;
+      } else {
+        const lang = (i18n?.language || (typeof window !== 'undefined' ? localStorage.getItem('NOCOBASE_LOCALE') : '') || '').toLowerCase();
+        title = (!lang || lang.startsWith('zh')) ? '附件清理管理' : (res || 'Attachment Cleaner');
+      }
+    } catch (e) {
+      title = '附件清理管理';
+    }
     const icon = 'DeleteOutlined';
     const menuKey = 'attachment-cleaner';
     const pageName = `${menuKey}.index`;

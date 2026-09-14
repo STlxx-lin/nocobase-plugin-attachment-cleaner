@@ -1,11 +1,11 @@
-﻿# NocoBase Plugin: Attachment Cleaner & Lifecycle Management (`@nocobase/plugin-attachment-cleaner`)
+# NocoBase Plugin: Attachment Cleaner & Lifecycle Management (`@nocobase/plugin-attachment-cleaner`)
 
 <p align="left">
   <b>English</b> | <a href="./README.md">简体中文</a>
 </p>
 
 [![Views](https://komarev.com/ghpvc/?username=nocobase-plugin-attachment-cleaner&color=007ec6&style=flat-square&label=Views)](https://github.com/STlxx-lin/nocobase-plugin-attachment-cleaner)
-[![Version](https://img.shields.io/badge/version-v0.0.15-blue.svg)](https://github.com/STlxx-lin/nocobase-plugin-attachment-cleaner/releases)
+[![Version](https://img.shields.io/badge/version-v0.0.16-blue.svg)](https://github.com/STlxx-lin/nocobase-plugin-attachment-cleaner/releases)
 [![NocoBase Version](https://img.shields.io/badge/NocoBase-2.x-brightgreen.svg)](https://www.nocobase.com)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
